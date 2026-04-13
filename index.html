@@ -728,7 +728,7 @@ footer{background:var(--ink);color:rgba(253,250,244,.5);padding:3.5rem 2rem;text
 
 <script>
 (function(){
-  var e="laculturacurafest",d="gmail.com";
+  var e="laculturacurafest",d="gm"+"ail.com";
   document.querySelectorAll('[data-email]').forEach(function(el){
     el.addEventListener('click',function(ev){
       ev.preventDefault();
@@ -773,7 +773,13 @@ function handleSubmit(e,type){
   e.preventDefault();
   var msgs={
     attend:{en:"Thank you for registering! We'll be in touch soon.",es:"¡Gracias por registrarte! Estaremos en contacto pronto."},
-    volunteer:{en:"Thank you! We'll reach out with next steps.",es:"¡Gracias
+    volunteer:{en:"Thank you! We'll reach out with next steps.",es:"¡Gracias! Nos pondremos en contacto pronto."},
+    consult:{en:"Thank you for your inquiry. We'll respond within 5-7 business days.",es:"¡Gracias por tu consulta! Responderemos en 5-7 días hábiles."}
+  };
+  var l=document.body.className||'en';
+  alert(msgs[type][l]);
+  e.target.reset();
+}
 </script>
 </body>
 </html>
