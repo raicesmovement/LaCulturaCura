@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="La Cultura Cura Festival: Somos Medicina — Third Annual Community Wellness Gathering. May 30, 2026 · Lugo Elementary School, Lynwood, CA. Free / Gratis.">
+<meta property="og:title" content="La Cultura Cura Festival: Somos Medicina">
+<meta property="og:description" content="Third Annual Community Wellness Gathering · May 30, 2026 · FREE · Lynwood, CA">
+<meta property="og:image" content="banner.png">
+<meta property="og:type" content="website">
+<title>La Cultura Cura Festival: Somos Medicina — May 30, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --brown:#6B3219;--brown-mid:#7D3E20;--brown-light:#A0522D;
+  --amber:#D4891A;--amber-bright:#E8A020;
+  --green:#4A8A3C;--green-light:#6AAD5A;
+  --cream:#FDFAF4;--cream-warm:#F5EFE0;--smoke:#EDE5D0;
+  --ink:#2A1A0A;--ink-mid:#5C3A1E;--ink-light:#9A7050;
+  --border:rgba(107,50,25,0.18);--border-green:rgba(74,138,60,0.25);
+  --yellow:#F5C800;--yellow-dark:#7A6000;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6;}
+
+.lang-bar{background:var(--brown);display:flex;align-items:center;justify-content:flex-end;padding:0 2rem;height:36px;gap:4px;}
+.lang-btn{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;padding:4px 14px;border-radius:100px;border:none;cursor:pointer;background:transparent;color:rgba(253,250,244,.55);transition:background .2s,color .2s;}
+.lang-btn.active{background:var(--amber);color:var(--cream);}
+.lang-sep{color:rgba(253,250,244,.3);font-size:12px;}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:58px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:15px;color:var(--brown);text-decoration:none;}
+.nav-links{display:flex;gap:1.5rem;list-style:none;}
+.nav-links a{font-size:13px;font-weight:500;color:var(--ink-mid);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--brown);}
+.nav-cta{font-size:13px;font-weight:700;color:var(--cream);background:var(--amber);border:none;padding:9px 18px;border-radius:100px;cursor:pointer;text-decoration:none;transition:background .2s;}
+.nav-cta:hover{background:var(--amber-bright);}
+.hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--brown);border-radius:2px;}
+@media(max-width:720px){.nav-links{display:none;}.hamburger{display:flex;}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--border);padding:1.5rem 2rem;gap:1.25rem;z-index:99;}}
+
+.hero{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:60px 2rem 5rem;background:var(--cream);overflow:hidden;text-align:center;}
+.hero-botanical{position:absolute;bottom:0;left:0;right:0;height:180px;opacity:.15;pointer-events:none;width:100%;}
+.hero-banner{width:100%;max-width:860px;border-radius:16px;margin-bottom:2rem;display:block;box-shadow:0 8px 40px rgba(107,50,25,.12);}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:1.25rem;display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;}
+.dash{width:24px;height:1.5px;background:var(--green-light);border-radius:2px;display:inline-block;flex-shrink:0;}
+.theme-pill{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--green);border:1.5px solid var(--border-green);background:rgba(74,138,60,.06);padding:7px 18px;border-radius:100px;margin-bottom:2rem;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:0;justify-content:center;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:white;margin-bottom:2.5rem;max-width:720px;width:100%;}
+.meta-item{flex:1;min-width:140px;padding:1rem 1.25rem;border-right:1px solid var(--border);text-align:center;}
+.meta-item:last-child{border-right:none;}
+.meta-lbl{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-light);margin-bottom:5px;}
+.meta-val{font-family:'Lora',serif;font-size:15px;color:var(--ink);font-weight:600;}
+.free-badge{display:inline-block;background:var(--yellow);color:var(--yellow-dark);font-family:'Nunito',sans-serif;font-weight:900;font-size:13px;padding:3px 12px;border-radius:100px;}
+@media(max-width:480px){.hero-meta{flex-direction:column;}.meta-item{border-right:none;border-bottom:1px solid var(--border);}.meta-item:last-child{border-bottom:none;}}
+
+.btn-p{display:inline-block;font-size:14px;font-weight:700;color:var(--cream);background:var(--brown);border:none;padding:14px 32px;border-radius:100px;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;margin-right:10px;margin-bottom:10px;}
+.btn-p:hover{background:var(--brown-light);transform:translateY(-1px);}
+.btn-s{display:inline-block;font-size:14px;font-weight:600;color:var(--amber);background:transparent;border:2px solid var(--amber);padding:12px 30px;border-radius:100px;cursor:pointer;text-decoration:none;transition:background .2s;margin-bottom:10px;}
+.btn-s:hover{background:rgba(212,137,26,.08);}
+.btn-a{display:inline-block;font-size:15px;font-weight:700;color:var(--brown);background:var(--amber);border:none;padding:14px 36px;border-radius:100px;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;}
+.btn-a:hover{background:var(--amber-bright);transform:translateY(-1px);}
+
+section{padding:5rem 2rem;}
+.si{max-width:900px;margin:0 auto;}
+.slbl{font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:.75rem;display:flex;align-items:center;gap:10px;}
+.slbl::before{content:'';width:20px;height:2px;background:var(--green-light);border-radius:2px;flex-shrink:0;}
+.stitle{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(26px,4vw,48px);color:var(--brown);margin-bottom:1.1rem;line-height:1.1;}
+.sbody{font-family:'Lora',serif;font-size:18px;line-height:1.78;color:var(--ink-mid);max-width:640px;}
+
+.ldiv{display:flex;align-items:center;gap:1rem;padding:0 2rem;max-width:900px;margin:0 auto;}
+.lline{flex:1;height:1px;background:var(--border);}
+.lico{color:var(--green-light);font-size:18px;}
+
+.ti{background:rgba(74,138,60,.07);border:1px solid var(--border-green);border-radius:12px;padding:1.25rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;margin-bottom:2.5rem;}
+.ti-ico{font-size:20px;flex-shrink:0;margin-top:2px;}
+.ti-txt{font-family:'Lora',serif;font-size:16px;line-height:1.65;color:var(--ink-mid);font-style:italic;}
+.ti-txt strong{font-style:normal;font-weight:600;color:var(--green);}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:2.5rem;align-items:start;}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr;gap:2.5rem;}}
+.about-body{font-family:'Lora',serif;font-size:18px;line-height:1.78;color:var(--ink-mid);}
+.about-body strong{font-weight:600;color:var(--brown);}
+.about-body p+p{margin-top:1.25rem;}
+.pillars{display:flex;flex-direction:column;gap:.8rem;}
+.pillar{display:flex;align-items:flex-start;gap:.85rem;padding:1rem 1.1rem;background:var(--cream-warm);border-radius:10px;border-left:3px solid var(--amber);}
+.pillar-ico{font-size:18px;flex-shrink:0;margin-top:1px;}
+.pt{font-size:13px;font-weight:700;color:var(--brown);margin-bottom:2px;}
+.pd{font-size:12px;color:var(--ink-light);line-height:1.45;}
+
+/* PROGRAM */
+.program-bg{background:var(--smoke);}
+.sess-hdr{background:var(--yellow);border-radius:10px;padding:.75rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;}
+.sess-t{font-family:'Nunito',sans-serif;font-weight:900;font-size:17px;color:var(--yellow-dark);letter-spacing:.04em;}
+.sess-time{font-family:'DM Sans',sans-serif;font-weight:700;font-size:13px;color:var(--yellow-dark);}
+.sess-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;}
+@media(max-width:600px){.sess-grid{grid-template-columns:1fr;}}
+.fac-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:white;}
+.fac-row{display:grid;grid-template-columns:1fr auto;align-items:start;padding:1rem 1.1rem;border-bottom:1px solid var(--border);gap:.5rem;transition:background .15s;}
+.fac-row:last-child{border-bottom:none;}
+.fac-row:hover{background:var(--cream-warm);}
+.fac-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:14px;color:var(--brown);margin-bottom:2px;}
+.fac-desc{font-size:13px;color:var(--ink-mid);}
+.room{font-size:10px;font-weight:700;letter-spacing:.08em;background:rgba(212,137,26,.12);color:var(--amber);border-radius:100px;padding:3px 9px;white-space:nowrap;margin-top:2px;}
+
+.sched-tbl{margin-top:2.5rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+.sr{display:grid;grid-template-columns:110px 1fr;border-bottom:1px solid var(--border);background:white;transition:background .15s;}
+.sr:last-child{border-bottom:none;}
+.sr:hover{background:#FDF6EC;}
+.st{padding:1.1rem 1.2rem;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--amber);border-right:1px solid var(--border);display:flex;align-items:center;}
+.sc{padding:1.1rem 1.4rem;}
+.sc-t{font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;color:var(--ink);margin-bottom:3px;}
+.sc-d{font-size:12px;color:var(--ink-light);line-height:1.45;}
+.badge{display:inline-block;margin-left:7px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(212,137,26,.12);color:var(--amber);border-radius:100px;padding:2px 7px;vertical-align:middle;}
+@media(max-width:440px){.sr{grid-template-columns:75px 1fr;}.st{font-size:10px;padding:.9rem .65rem;}}
+
+.booths-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:1.5rem;}
+@media(max-width:480px){.booths-grid{grid-template-columns:1fr;}}
+.booth{display:flex;align-items:flex-start;gap:.75rem;padding:.9rem 1rem;background:white;border-radius:10px;border:1px solid var(--border);}
+.bi{font-size:18px;flex-shrink:0;}
+.bt{font-size:14px;color:var(--ink-mid);line-height:1.4;}
+.bt strong{color:var(--brown);font-weight:700;display:block;font-size:13px;margin-bottom:1px;}
+
+/* PHOTOS / FLYERS */
+.photos-bg{background:var(--cream-warm);}
+.flyers-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem;}
+@media(max-width:560px){.flyers-grid{grid-template-columns:1fr;}}
+.flyer-img{width:100%;border-radius:14px;border:1px solid var(--border);display:block;box-shadow:0 4px 24px rgba(107,50,25,.1);}
+.flyer-cap{text-align:center;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);margin-top:.75rem;}
+
+/* SPONSORS */
+.sponsors-bg{background:white;text-align:center;}
+.sp-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:3rem;margin-top:2.5rem;}
+.sp-mag{font-family:'Nunito',sans-serif;font-weight:900;font-size:34px;color:#C0272D;letter-spacing:-.02em;line-height:1;}
+.sp-mag-sub{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#C0272D;}
+.sp-ang{font-family:'Lora',serif;font-size:22px;color:var(--ink);font-style:italic;}
+
+/* TEMPLATE DARK */
+.tmpl-bg{background:var(--brown);color:var(--cream);text-align:center;}
+.tmpl-bg .slbl{color:var(--green-light);}
+.tmpl-bg .slbl::before{background:var(--green-light);}
+.tmpl-bg .stitle{color:var(--cream);}
+.tmpl-bg .sbody{color:rgba(253,250,244,.72);margin:0 auto 2.5rem;}
+.tmpl-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:2.5rem 0;text-align:left;}
+@media(max-width:640px){.tmpl-cards{grid-template-columns:1fr;}}
+.tc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:1.75rem;transition:background .2s;}
+.tc:hover{background:rgba(255,255,255,.11);}
+.tc-n{font-family:'Nunito',sans-serif;font-weight:900;font-size:36px;color:var(--amber);opacity:.5;margin-bottom:.6rem;line-height:1;}
+.tc-t{font-size:14px;font-weight:700;color:var(--cream);margin-bottom:.5rem;}
+.tc-d{font-family:'Lora',serif;font-size:15px;color:rgba(253,250,244,.6);line-height:1.6;}
+
+/* CONTACT */
+.contact-bg{background:var(--smoke);}
+.tab-bar{display:flex;border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:2.5rem;background:white;}
+.tab-btn{flex:1;padding:1rem;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;border:none;border-right:1px solid var(--border);background:transparent;color:var(--ink-light);cursor:pointer;transition:background .2s,color .2s;display:flex;align-items:center;justify-content:center;gap:6px;line-height:1.3;text-align:center;}
+.tab-btn:last-child{border-right:none;}
+.tab-btn.active{background:var(--brown);color:var(--cream);}
+.tab-btn:hover:not(.active){background:var(--cream-warm);color:var(--brown);}
+@media(max-width:560px){.tab-bar{flex-direction:column;}.tab-btn{border-right:none;border-bottom:1px solid var(--border);}.tab-btn:last-child{border-bottom:none;}}
+.tab-panel{display:none;}.tab-panel.active{display:block;}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+@media(max-width:660px){.cgrid{grid-template-columns:1fr;gap:2rem;}}
+.fcard{background:white;border-radius:16px;padding:2rem;border:1px solid var(--border);}
+.ff{display:flex;flex-direction:column;gap:5px;margin-bottom:1.1rem;}
+.flbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mid);}
+.finp,.ftxt,.fsel{font-family:'Lora',serif;font-size:16px;color:var(--ink);background:var(--cream);border:1.5px solid rgba(107,50,25,.2);border-radius:8px;padding:10px 14px;outline:none;transition:border-color .2s;width:100%;-webkit-appearance:none;}
+.finp:focus,.ftxt:focus,.fsel:focus{border-color:var(--brown);}
+.ftxt{min-height:90px;resize:vertical;}
+.fsel{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239A7050' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;}
+@media(max-width:500px){.frow{grid-template-columns:1fr;}}
+.cgrp{display:flex;flex-direction:column;gap:8px;}
+.ci{display:flex;align-items:flex-start;gap:10px;cursor:pointer;}
+.ci input{margin-top:3px;accent-color:var(--brown);flex-shrink:0;width:16px;height:16px;cursor:pointer;}
+.cilbl{font-size:14px;color:var(--ink-mid);line-height:1.4;}
+.cilbl em{font-size:12px;color:var(--ink-light);display:block;font-style:normal;margin-top:1px;}
+.sbtn{width:100%;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--cream);background:var(--brown);border:none;padding:14px;border-radius:100px;cursor:pointer;transition:background .2s;margin-top:.75rem;}
+.sbtn:hover{background:var(--brown-light);}
+.sbtn.am{background:var(--amber);}.sbtn.am:hover{background:var(--amber-bright);}
+.sbtn.gr{background:var(--green);}.sbtn.gr:hover{background:var(--green-light);}
+.istack{display:flex;flex-direction:column;gap:1.25rem;}
+.icard{background:white;border-radius:14px;padding:1.5rem;border:1px solid var(--border);}
+.icard-t{font-family:'Nunito',sans-serif;font-weight:800;font-size:16px;color:var(--brown);margin-bottom:.6rem;display:flex;align-items:center;gap:8px;}
+.icard-b{font-family:'Lora',serif;font-size:15px;line-height:1.65;color:var(--ink-mid);}
+.icard-b em{font-style:italic;}
+.snote{background:rgba(74,138,60,.08);border:1px solid var(--border-green);border-radius:10px;padding:1rem 1.25rem;font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--green);line-height:1.6;margin-top:1rem;}
+.survey-ph{background:rgba(212,137,26,.07);border:1.5px dashed rgba(212,137,26,.4);border-radius:12px;padding:1.75rem;text-align:center;margin-top:1rem;}
+.survey-ico{font-size:28px;margin-bottom:.75rem;}
+.survey-txt{font-family:'Lora',serif;font-size:15px;color:var(--ink-mid);line-height:1.6;}
+.survey-txt strong{color:var(--amber);font-style:normal;}
+
+footer{background:var(--ink);color:rgba(253,250,244,.5);padding:3.5rem 2rem;text-align:center;}
+.flogo{font-family:'Nunito',sans-serif;font-weight:900;font-size:20px;color:var(--cream);margin-bottom:.65rem;}
+.fbody{font-family:'Lora',serif;font-size:15px;font-style:italic;line-height:1.7;max-width:480px;margin:0 auto 1.25rem;color:rgba(253,250,244,.65);}
+.fdiv{width:40px;height:1px;background:rgba(253,250,244,.15);margin:1.25rem auto;}
+.flinks{display:flex;gap:2rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;background:transparent;}
+.flinks a{font-size:12px;color:rgba(253,250,244,.45);text-decoration:none;transition:color .2s;}
+.flinks a:hover{color:var(--amber);}
+.fnote{font-size:11px;letter-spacing:.06em;color:rgba(253,250,244,.3);}
+.tlazocamati{font-family:'Nunito',sans-serif;font-weight:900;font-size:16px;color:var(--amber);letter-spacing:.08em;margin-top:1.25rem;}
+
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--brown);color:var(--cream);padding:8px 16px;border-radius:8px;font-weight:700;text-decoration:none;z-index:999;transition:top .2s;}
+.skip-link:focus{top:8px;}
+@media(max-width:480px){
+  section{padding:3.5rem 1.25rem;}
+  .sbody{font-size:17px;}
+  .about-body{font-size:17px;}
+  .sc-t{font-size:14px;}
+  .fac-name{font-size:13px;}
+  .fac-desc{font-size:12px;}
+  .icard-b{font-size:14px;}
+  .ti-txt{font-size:15px;}
+  .finp,.ftxt,.fsel{font-size:17px;} /* prevents iOS zoom on focus */
+  .fcard{padding:1.5rem 1.25rem;}
+  .cilbl{font-size:15px;}
+  .sbtn{font-size:15px;padding:15px;}
+  .check-label{font-size:15px;}
+  .pillar{padding:.85rem .9rem;}
+  .pd{font-size:13px;}
+  .ldiv{padding:0 1.25rem;}
+}
+</style>
+</head>
+<body class="en">
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')" aria-pressed="true">EN</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" onclick="setLang('es')" aria-pressed="false">ES</button>
+</div>
+
+<nav>
+  <a href="#" class="nav-logo">La Cultura Cura</a>
+  <button class="hamburger" onclick="toggleMenu(this)" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" data-en="About" data-es="Sobre el Evento">About</a></li>
+    <li><a href="#program" data-en="Program" data-es="Programa">Program</a></li>
+    <li><a href="#photos" data-en="Past Years" data-es="Años Anteriores">Past Years</a></li>
+    <li><a href="#template" data-en="For Communities" data-es="Para Comunidades">For Communities</a></li>
+    <li><a href="#contact" data-en="Register" data-es="Regístrate">Register</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta" data-en="Register — FREE" data-es="Regístrate — GRATIS">Register — FREE</a>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-botanical" viewBox="0 0 1400 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <g fill="none" stroke="#4A8A3C" stroke-width="1.2" opacity="0.7">
+      <g transform="translate(60,180)"><line x1="0" y1="0" x2="-18" y2="-120"/><ellipse cx="-26" cy="-90" rx="10" ry="18" transform="rotate(-30 -26 -90)"/><ellipse cx="-8" cy="-55" rx="8" ry="14" transform="rotate(22 -8 -55)"/></g>
+      <g transform="translate(200,180)"><line x1="0" y1="0" x2="12" y2="-140"/><ellipse cx="20" cy="-105" rx="10" ry="19" transform="rotate(25 20 -105)"/><ellipse cx="4" cy="-65" rx="9" ry="15" transform="rotate(-15 4 -65)"/></g>
+      <g transform="translate(360,180)"><line x1="0" y1="0" x2="-14" y2="-115"/><ellipse cx="-22" cy="-82" rx="10" ry="17" transform="rotate(-20 -22 -82)"/><ellipse cx="-5" cy="-48" rx="8" ry="13" transform="rotate(25 -5 -48)"/></g>
+      <g transform="translate(520,180)"><line x1="0" y1="0" x2="16" y2="-135"/><ellipse cx="24" cy="-98" rx="11" ry="20" transform="rotate(30 24 -98)"/><ellipse cx="7" cy="-60" rx="9" ry="15" transform="rotate(-20 7 -60)"/></g>
+      <g transform="translate(680,180)"><line x1="0" y1="0" x2="-10" y2="-125"/><ellipse cx="-18" cy="-90" rx="10" ry="18" transform="rotate(-28 -18 -90)"/><ellipse cx="-2" cy="-54" rx="9" ry="14" transform="rotate(18 -2 -54)"/></g>
+      <g transform="translate(840,180)"><line x1="0" y1="0" x2="14" y2="-140"/><ellipse cx="22" cy="-102" rx="11" ry="19" transform="rotate(22 22 -102)"/><ellipse cx="5" cy="-64" rx="9" ry="16" transform="rotate(-18 5 -64)"/></g>
+      <g transform="translate(1000,180)"><line x1="0" y1="0" x2="-16" y2="-115"/><ellipse cx="-24" cy="-84" rx="10" ry="17" transform="rotate(-25 -24 -84)"/><ellipse cx="-7" cy="-50" rx="8" ry="14" transform="rotate(22 -7 -50)"/></g>
+      <g transform="translate(1160,180)"><line x1="0" y1="0" x2="18" y2="-145"/><ellipse cx="26" cy="-106" rx="11" ry="20" transform="rotate(26 26 -106)"/><ellipse cx="9" cy="-68" rx="9" ry="16" transform="rotate(-22 9 -68)"/></g>
+      <g transform="translate(1340,180)"><line x1="0" y1="0" x2="-12" y2="-120"/><ellipse cx="-20" cy="-86" rx="10" ry="17" transform="rotate(-24 -20 -86)"/><ellipse cx="-4" cy="-50" rx="9" ry="14" transform="rotate(20 -4 -50)"/></g>
+    </g>
+  </svg>
+
+  <div style="position:relative;z-index:1;width:100%;max-width:860px;">
+    <img src="banner.png" alt="La Cultura Cura Festival: Somos Medicina" class="hero-banner" style="max-width:520px;">
+
+    <p class="hero-eyebrow">
+      <span class="dash"></span>
+      <span data-en="Third Annual · Lugo Elementary invites you and your family" data-es="Tercer Encuentro Anual · La Escuela Primaria Lugo les invita a usted y su familia">Third Annual · Lugo Elementary invites you and your family</span>
+      <span class="dash"></span>
+    </p>
+
+    <div style="margin-bottom:2rem;"><span class="theme-pill">🌱 <span data-en="Return to Our Roots" data-es="Regreso a Nuestras Raíces">Return to Our Roots</span></span></div>
+
+    <div class="hero-meta">
+      <div class="meta-item"><p class="meta-lbl" data-en="Date" data-es="Fecha">Date</p><p class="meta-val">May 30, 2026</p></div>
+      <div class="meta-item"><p class="meta-lbl" data-en="Time" data-es="Hora">Time</p><p class="meta-val">9:30 AM – 3:00 PM</p></div>
+      <div class="meta-item"><p class="meta-lbl" data-en="Location" data-es="Lugar">Location</p><p class="meta-val">Lugo Elementary, Lynwood CA</p></div>
+      <div class="meta-item"><p class="meta-lbl" data-en="Admission" data-es="Entrada">Admission</p><p class="meta-val"><span class="free-badge" data-en="FREE" data-es="GRATIS">FREE</span></p></div>
+    </div>
+
+    <p style="font-family:'Lora',serif;font-size:17px;color:var(--ink-mid);margin-bottom:2rem;font-style:italic;" data-en="Workshops · Sound Bath · Reiki · Children's Activities · Nutrition · Community Meal" data-es="Talleres · Baño de Sonido · Reiki · Actividades para Niños · Nutrición · Comida Comunitaria">Workshops · Sound Bath · Reiki · Children's Activities · Nutrition · Community Meal</p>
+
+    <div>
+      <a href="#contact" class="btn-p" data-en="Register to Attend" data-es="Regístrate para Asistir">Register to Attend</a>
+      <a href="#program" class="btn-s" data-en="View Program" data-es="Ver Programa">View Program</a>
+    </div>
+  </div>
+</section>
+
+<div class="ldiv"><div class="lline"></div><span class="lico">🌿</span><div class="lline"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="si">
+    <div class="ti">
+      <span class="ti-ico">🌱</span>
+      <p class="ti-txt" data-en="<strong>You are welcome here exactly as you are.</strong> This gathering is a trauma-informed space — there is no pressure to share, perform, or participate in any way that doesn't feel right for your body or your journey. You set the pace." data-es="<strong>Eres bienvenido/a tal como eres.</strong> Este encuentro es un espacio informado por el trauma — no hay presión de compartir, actuar o participar de ninguna manera que no se sienta correcta para tu cuerpo o tu camino. Tú marcas el ritmo."><strong>You are welcome here exactly as you are.</strong> This gathering is a trauma-informed space — there is no pressure to share, perform, or participate in any way that doesn't feel right for your body or your journey. You set the pace.</p>
+    </div>
+    <p class="slbl" data-en="About the Gathering" data-es="Sobre el Encuentro">About the Gathering</p>
+    <h2 class="stitle" data-en="Where culture becomes medicine" data-es="Donde la cultura se convierte en medicina">Where culture becomes medicine</h2>
+    <div class="about-grid">
+      <div class="about-body">
+        <p data-en="La Cultura Cura is a <strong>culturally rooted, family-centered wellness gathering</strong> that honors ancestral healing practices while integrating preventative health education and trauma-informed principles. A bilingual event for the whole family — Body, Mind, and Spirit." data-es="La Cultura Cura es un <strong>encuentro de bienestar culturalmente arraigado y centrado en la familia</strong> que honra las prácticas de sanación ancestral mientras integra educación preventiva de salud y principios informados por el trauma. Un evento bilingüe para toda la familia — Cuerpo, Mente y Espíritu.">La Cultura Cura is a <strong>culturally rooted, family-centered wellness gathering</strong> that honors ancestral healing practices while integrating preventative health education and trauma-informed principles. A bilingual event for the whole family — Body, Mind, and Spirit.</p>
+        <p data-en="This is not a drop-in fair. It is a <strong>guided, structured community experience</strong> — woven together by workshops, ceremonial círculos, live music and movement, a shared community meal, and all-day booths and activities." data-es="Este no es un evento de entrada libre. Es una <strong>experiencia comunitaria guiada y estructurada</strong> — tejida a través de talleres, círculos ceremoniales, música en vivo y movimiento, una comida comunitaria compartida y actividades durante todo el día.">This is not a drop-in fair. It is a <strong>guided, structured community experience</strong> — woven together by workshops, ceremonial círculos, live music and movement, a shared community meal, and all-day booths and activities.</p>
+        <p data-en="Now in its third year — <strong>built by the community, for the community.</strong> Un día dedicado a la curación, la conexión y la comunidad." data-es="Ahora en su tercer año — <strong>construido por la comunidad, para la comunidad.</strong> Un día dedicado a la curación, la conexión y la comunidad.">Now in its third year — <strong>built by the community, for the community.</strong> Un día dedicado a la curación, la conexión y la comunidad.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="pillar-ico">💓</span><div><p class="pt" data-en="Preventative Health" data-es="Salud Preventiva">Preventative Health</p><p class="pd" data-en="Heart health, diabetes prevention, blood pressure awareness" data-es="Salud del corazón, prevención de diabetes, conciencia sobre la presión arterial">Heart health, diabetes prevention, blood pressure awareness</p></div></div>
+        <div class="pillar"><span class="pillar-ico">🌊</span><div><p class="pt" data-en="Nervous System Care" data-es="Cuidado del Sistema Nervioso">Nervous System Care</p><p class="pd" data-en="Breathwork, sound bath, emotional regulation, limbic system education" data-es="Respiración, baño de sonido, regulación emocional, educación del sistema límbico">Breathwork, sound bath, emotional regulation, limbic system education</p></div></div>
+        <div class="pillar"><span class="pillar-ico">🌿</span><div><p class="pt" data-en="Ancestral Wisdom" data-es="Sabiduría Ancestral">Ancestral Wisdom</p><p class="pd" data-en="Cultural pride, tea ceremony, herbs, Indigenous protocols" data-es="Orgullo cultural, ceremonia de té, hierbas, protocolos indígenas">Cultural pride, tea ceremony, herbs, Indigenous protocols</p></div></div>
+        <div class="pillar"><span class="pillar-ico">👨‍👩‍👧</span><div><p class="pt" data-en="Intergenerational Healing" data-es="Sanación Intergeneracional">Intergenerational Healing</p><p class="pd" data-en="Family yoga, garden planting, arts &amp; crafts, intergenerational workshops" data-es="Yoga familiar, siembra en jardín, arte y manualidades, talleres intergeneracionales">Family yoga, garden planting, arts &amp; crafts, intergenerational workshops</p></div></div>
+        <div class="pillar"><span class="pillar-ico">📋</span><div><p class="pt" data-en="Concrete Supports" data-es="Apoyos Concretos">Concrete Supports</p><p class="pd" data-en="Immigration &amp; legal QR station · Know Your Rights · Health resource tables" data-es="Estación QR de inmigración y legal · Conoce tus Derechos · Mesas de recursos de salud">Immigration &amp; legal QR station · Know Your Rights · Health resource tables</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ldiv"><div class="lline"></div><span class="lico">🌿</span><div class="lline"></div></div>
+
+<!-- PROGRAM -->
+<section id="program" class="program-bg">
+  <div class="si">
+    <p class="slbl" data-en="2026 Program" data-es="Programa 2026">2026 Program</p>
+    <h2 class="stitle" data-en="A full day of healing" data-es="Un día completo de sanación">A full day of healing</h2>
+
+    <!-- 2026 ELEMENTAL WORKSHOPS -->
+    <p class="sbody" style="margin-bottom:2rem;" data-en="Participants attend two 40-minute workshops across two rounds, choosing from four elemental paths. Facilitator details are being confirmed — check back for updates." data-es="Los participantes asisten a dos talleres de 40 minutos en dos rondas, eligiendo entre cuatro caminos elementales. Los detalles de facilitadores se están confirmando — regresa pronto para actualizaciones.">Participants attend two 40-minute workshops across two rounds, choosing from four elemental paths. Facilitator details are being confirmed — check back for updates.</p>
+
+    <div class="elements-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-bottom:2.5rem;">
+      <article class="el-card el-fire">
+        <span class="el-symbol">🔥</span>
+        <h3 class="el-name" data-en="Fire" data-es="Fuego">Fire</h3>
+        <p class="el-focus" data-en="Heart Health &amp; Circulation" data-es="Salud del Corazón y Circulación">Heart Health &amp; Circulation</p>
+        <p class="el-desc" data-en="Medical education integrated with healing touch. Led by Elizabeth, RN." data-es="Educación médica integrada con toque sanador. A cargo de Elizabeth, Enfermera.">Medical education integrated with healing touch. Led by Elizabeth, RN.</p>
+      </article>
+      <article class="el-card el-water">
+        <span class="el-symbol">💧</span>
+        <h3 class="el-name" data-en="Water" data-es="Agua">Water</h3>
+        <p class="el-focus" data-en="Emotional Health &amp; Limbic System" data-es="Salud Emocional y Sistema Límbico">Emotional Health &amp; Limbic System</p>
+        <p class="el-desc" data-en="Nervous system education and emotional regulation. Led by Tata G." data-es="Educación del sistema nervioso y regulación emocional. A cargo de Tata G.">Nervous system education and emotional regulation. Led by Tata G.</p>
+      </article>
+      <article class="el-card el-earth">
+        <span class="el-symbol">🌿</span>
+        <h3 class="el-name" data-en="Earth" data-es="Tierra">Earth</h3>
+        <p class="el-focus" data-en="Food, Herbs &amp; Tea Ceremony" data-es="Alimentos, Hierbas y Ceremonia de Té">Food, Herbs &amp; Tea Ceremony</p>
+        <p class="el-desc" data-en="Diabetes prevention and tea education. Led by Cura-Te Colectiva." data-es="Prevención de diabetes y educación sobre el té. A cargo de Cura-Te Colectiva.">Diabetes prevention and tea education. Led by Cura-Te Colectiva.</p>
+      </article>
+      <article class="el-card el-air">
+        <span class="el-symbol">🌬️</span>
+        <h3 class="el-name" data-en="Air" data-es="Aire">Air</h3>
+        <p class="el-focus" data-en="Breath &amp; Family Yoga" data-es="Respiración y Yoga Familiar">Breath &amp; Family Yoga</p>
+        <p class="el-desc" data-en="Safety, regulation, and releasing fear through breath and movement. Led by Nina." data-es="Seguridad, regulación y liberación del miedo a través de respiración y movimiento. A cargo de Nina.">Safety, regulation, and releasing fear through breath and movement. Led by Nina.</p>
+      </article>
+    </div>
+
+    <h3 style="font-family:'Nunito',sans-serif;font-weight:900;font-size:22px;color:var(--brown);margin:0 0 0;" data-en="Full Day Schedule" data-es="Programa Completo del Día">Full Day Schedule</h3>
+    <div class="sched-tbl">
+      <div class="sr"><span class="st">9:30 AM</span><div class="sc"><p class="sc-t" data-en="Registration Opens" data-es="Apertura de Registro">Registration Opens</p><p class="sc-d" data-en="Check-in · Photo waiver · Color-coded element name tags · Immigration/legal QR station active · Tlamanalli open" data-es="Registro · Consentimiento fotográfico · Gafetes de elemento · Estación QR legal activa · Tlamanalli abierto">Check-in · Photo waiver · Color-coded element name tags · Immigration/legal QR station active · Tlamanalli open</p></div></div>
+      <div class="sr"><span class="st">10:00 AM</span><div class="sc"><p class="sc-t">Desfile Cultural <span class="badge" data-en="Ceremonial" data-es="Ceremonial">Ceremonial</span></p><p class="sc-d" data-en="Ancestral procession led by Tata G · Optional drumming · Youth, families &amp; facilitators process to tlamanalli" data-es="Procesión ancestral guiada por Tata G · Tambores opcionales · Jóvenes, familias y facilitadores procesan al tlamanalli">Ancestral procession led by Tata G · Optional drumming · Youth, families &amp; facilitators process to tlamanalli</p></div></div>
+      <div class="sr"><span class="st">10:15 AM</span><div class="sc"><p class="sc-t" data-en="Welcome &amp; Opening Circle" data-es="Bienvenida y Círculo de Apertura">Welcome &amp; Opening Circle</p><p class="sc-d" data-en="Welcome by Paul · Facilitation by Tata G · Land acknowledgment · Introduction to Four Elements · Blessing of tlamanalli" data-es="Bienvenida por Paul · Facilitación por Tata G · Reconocimiento de la tierra · Introducción a los Cuatro Elementos · Bendición del tlamanalli">Welcome by Paul · Facilitation by Tata G · Land acknowledgment · Introduction to Four Elements · Blessing of tlamanalli</p></div></div>
+      <div class="sr"><span class="st">11:00 AM</span><div class="sc"><p class="sc-t" data-en="Workshop Round 1" data-es="Taller Ronda 1">Workshop Round 1 <span class="badge">40 min</span></p><p class="sc-d" data-en="Choose one of four elemental workshops: Fire, Water, Earth, or Air" data-es="Elige uno de cuatro talleres elementales: Fuego, Agua, Tierra o Aire">Choose one of four elemental workshops: Fire, Water, Earth, or Air</p></div></div>
+      <div class="sr"><span class="st">11:45 AM</span><div class="sc"><p class="sc-t" data-en="Workshop Round 2" data-es="Taller Ronda 2">Workshop Round 2 <span class="badge">40 min</span></p><p class="sc-d" data-en="Choose a second, different elemental workshop" data-es="Elige un segundo taller elemental diferente">Choose a second, different elemental workshop</p></div></div>
+      <div class="sr"><span class="st">12:30 PM</span><div class="sc"><p class="sc-t" data-en="Open Experience Block" data-es="Bloque de Experiencia Abierta">Open Experience Block</p><p class="sc-d" data-en="Sound Bath (Library) · Movement session · Garden Station · Arts &amp; Crafts · Vendor Pop-Up" data-es="Baño de Sonido (Biblioteca) · Sesión de movimiento · Estación de jardín · Arte y manualidades · Vendedores">Sound Bath (Library) · Movement session · Garden Station · Arts &amp; Crafts · Vendor Pop-Up</p></div></div>
+      <div class="sr"><span class="st">1:00 PM</span><div class="sc"><p class="sc-t" data-en="Lunch &amp; Community Hour" data-es="Almuerzo y Hora Comunitaria">Lunch &amp; Community Hour</p><p class="sc-d" data-en="Community meal · Tea offered · Vendors active · Garden station continues · Open movement and social connection" data-es="Comida comunitaria · Té ofrecido · Vendedores activos · Jardín continúa · Movimiento y conexión social">Community meal · Tea offered · Vendors active · Garden station continues · Open movement and social connection</p></div></div>
+      <div class="sr"><span class="st">2:00 PM</span><div class="sc"><p class="sc-t" data-en="Closing Circle" data-es="Círculo de Cierre">Closing Circle <span class="badge" data-en="Ceremonial" data-es="Ceremonial">Ceremonial</span></p><p class="sc-d" data-en="Reflection prompt (Paul &amp; Tata G) · Partner acknowledgments · Raffle drawing · Group photo · Closing blessing" data-es="Reflexión (Paul y Tata G) · Reconocimientos · Rifa · Foto grupal · Bendición de cierre">Reflection prompt (Paul &amp; Tata G) · Partner acknowledgments · Raffle drawing · Group photo · Closing blessing</p></div></div>
+    </div>
+
+    <h3 style="font-family:'Nunito',sans-serif;font-weight:900;font-size:22px;color:var(--brown);margin:3rem 0 0;" data-en="Open Experience Block" data-es="Bloque de Experiencia Abierta">Open Experience Block</h3>
+    <p style="font-family:'Lora',serif;font-size:16px;color:var(--ink-mid);margin:.5rem 0 1.25rem;line-height:1.65;" data-en="12:30 – 1:10 PM · Participants choose their own path through a mix of healing, movement, and community." data-es="12:30 – 1:10 PM · Los participantes eligen su propio camino entre sanación, movimiento y comunidad.">12:30 – 1:10 PM · Participants choose their own path through a mix of healing, movement, and community.</p>
+    <div class="booths-grid">
+      <div class="booth"><span class="bi">🎵</span><div class="bt"><strong data-en="Sound Bath" data-es="Baño de Sonido">Sound Bath</strong><span data-en="Library · 40 min · Lead: Martha Herrera" data-es="Biblioteca · 40 min · A cargo de: Martha Herrera">Library · 40 min · Lead: Martha Herrera</span></div></div>
+      <div class="booth"><span class="bi">🕺</span><div class="bt"><strong data-en="Movement Session" data-es="Sesión de Movimiento">Movement Session</strong><span data-en="Lead: Rosanna del Rio or Brenda Pulido" data-es="A cargo de: Rosanna del Rio o Brenda Pulido">Lead: Rosanna del Rio or Brenda Pulido</span></div></div>
+      <div class="booth"><span class="bi">🌱</span><div class="bt"><strong data-en="Garden Station" data-es="Estación de Jardín">Garden Station</strong><span data-en="Lugo Garden Club" data-es="Club de Jardín de Lugo">Lugo Garden Club</span></div></div>
+      <div class="booth"><span class="bi">🎨</span><div class="bt"><strong data-en="Arts &amp; Crafts" data-es="Arte y Manualidades">Arts &amp; Crafts</strong></div></div>
+      <div class="booth"><span class="bi">🛍️</span><div class="bt"><strong data-en="Vendor Pop-Up" data-es="Vendedores">Vendor Pop-Up</strong><span data-en="5–8 culturally aligned small businesses · plants &amp; cultural items" data-es="5–8 pequeños negocios culturalmente alineados · plantas y artículos culturales">5–8 culturally aligned small businesses · plants &amp; cultural items</span></div></div>
+      <div class="booth"><span class="bi">📋</span><div class="bt"><strong data-en="Immigration &amp; Legal Resources" data-es="Recursos de Inmigración y Legales">Immigration &amp; Legal Resources</strong><span data-en="QR station · Know Your Rights materials" data-es="Estación QR · Materiales Conoce tus Derechos">QR station · Know Your Rights materials</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ldiv"><div class="lline"></div><span class="lico">🌿</span><div class="lline"></div></div>
+
+<!-- PAST YEARS — FLIP CARDS -->
+<section id="photos" class="photos-bg">
+  <div class="si">
+    <p class="slbl" data-en="From Past Years" data-es="Años Anteriores">From Past Years</p>
+    <h2 class="stitle" data-en="See what this community creates" data-es="Mira lo que esta comunidad crea">See what this community creates</h2>
+    <p class="sbody" data-en="A look back at La Cultura Cura 2025. Hover each card — or tap on mobile — to see the event details behind the flyer." data-es="Un vistazo a La Cultura Cura 2025. Pasa el cursor sobre cada tarjeta — o toca en tu celular — para ver los detalles del evento detrás del flyer.">A look back at La Cultura Cura 2025. Hover each card — or tap on mobile — to see the event details behind the flyer.</p>
+
+    <style>
+      .flip-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;}
+      @media(max-width:580px){.flip-grid{grid-template-columns:1fr;}}
+      .flip-wrap{perspective:1200px;}
+      .flip-inner{
+        position:relative;width:100%;
+        transform-style:preserve-3d;
+        transition:transform .65s cubic-bezier(.4,0,.2,1);
+        cursor:pointer;
+      }
+      .flip-wrap:hover .flip-inner,
+      .flip-wrap.tapped .flip-inner{transform:rotateY(180deg);}
+      .flip-front,.flip-back{
+        width:100%;
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+        border-radius:14px;
+        overflow:hidden;
+        border:1px solid var(--border);
+        box-shadow:0 4px 24px rgba(107,50,25,.1);
+      }
+      .flip-front{display:block;}
+      .flip-back{
+        position:absolute;top:0;left:0;height:100%;
+        transform:rotateY(180deg);
+        background:var(--cream-warm);
+        display:flex;align-items:center;justify-content:center;
+      }
+      .flip-front img,.flip-back img{width:100%;display:block;border-radius:0;}
+      .flip-hint{
+        text-align:center;
+        font-family:'DM Sans',sans-serif;
+        font-size:12px;font-weight:600;
+        letter-spacing:.1em;text-transform:uppercase;
+        color:var(--ink-light);margin-top:.85rem;
+        display:flex;align-items:center;justify-content:center;gap:6px;
+      }
+      .flip-hint svg{opacity:.5;}
+      .flip-lang{
+        font-family:'Nunito',sans-serif;font-weight:900;
+        font-size:13px;letter-spacing:.1em;text-transform:uppercase;
+        color:var(--amber);margin-bottom:.5rem;text-align:center;
+        display:block;
+      }
+    </style>
+
+    <div class="flip-grid">
+      <!-- ENGLISH STACK: flyer-en front / details-en back -->
+      <div>
+        <span class="flip-lang" data-en="English" data-es="Inglés">English</span>
+        <div class="flip-wrap" onclick="this.classList.toggle('tapped')" role="button" tabindex="0" aria-label="Flip to see 2025 English event details" onkeydown="if(event.key==='Enter'||event.key===' ')this.classList.toggle('tapped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="flyer-en.png" alt="2025 La Cultura Cura Festival flyer — English">
+            </div>
+            <div class="flip-back">
+              <img src="details-en.png" alt="2025 La Cultura Cura event details — English">
+            </div>
+          </div>
+        </div>
+        <p class="flip-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM17 14v6M14 17h6"/></svg>
+          <span data-en="Hover or tap to flip" data-es="Pasa el cursor o toca para voltear">Hover or tap to flip</span>
+        </p>
+      </div>
+
+      <!-- SPANISH STACK: flyer-es front / details-es back -->
+      <div>
+        <span class="flip-lang" data-en="Español" data-es="Español">Español</span>
+        <div class="flip-wrap" onclick="this.classList.toggle('tapped')" role="button" tabindex="0" aria-label="Voltear para ver detalles del evento 2025 en español" onkeydown="if(event.key==='Enter'||event.key===' ')this.classList.toggle('tapped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="flyer-es.png" alt="Flyer del Festival La Cultura Cura 2025 — Español">
+            </div>
+            <div class="flip-back">
+              <img src="details-es.png" alt="Detalles del evento La Cultura Cura 2025 — Español">
+            </div>
+          </div>
+        </div>
+        <p class="flip-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM17 14v6M14 17h6"/></svg>
+          <span data-en="Hover or tap to flip" data-es="Pasa el cursor o toca para voltear">Hover or tap to flip</span>
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;display:flex;flex-direction:column;align-items:center;gap:1rem;">
+      <p style="font-family:'Lora',serif;font-size:16px;font-style:italic;color:var(--ink-mid);text-align:center;margin-bottom:.25rem;" data-en="Follow along and reach out — we'd love to hear from you." data-es="Síguenos y comunícate — nos encantaría saber de ti.">Follow along and reach out — we'd love to hear from you.</p>
+      <a href="https://www.instagram.com/la_cultura_cura_festival" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--brown);color:#FDFAF4;text-decoration:none;padding:16px 32px;border-radius:100px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:17px;width:100%;max-width:420px;box-sizing:border-box;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+        @la_cultura_cura_festival
+      </a>
+      <a href="/cdn-cgi/l/email-protection#137f7270667f67666172706661727576606753747e727a7f3d707c7e" style="display:inline-flex;align-items:center;justify-content:center;gap:12px;background:transparent;color:var(--brown);text-decoration:none;padding:15px 32px;border-radius:100px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:17px;border:2px solid var(--brown);width:100%;max-width:420px;box-sizing:border-box;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="__cf_email__" data-cfemail="99f5f8faecf5edecebf8faecebf8fffceaedd9fef4f8f0f5b7faf6f4">[email&#160;protected]</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ldiv"><div class="lline"></div><span class="lico">🌿</span><div class="lline"></div></div>
+
+<!-- SPONSORS -->
+<section class="sponsors-bg">
+  <div class="si">
+    <p class="slbl" data-en="2025 Sponsors" data-es="Patrocinadores 2025">2025 Sponsors</p>
+    <h2 class="stitle" data-en="Gratitude to our community partners" data-es="Gratitud a nuestros socios comunitarios">Gratitude to our community partners</h2>
+    <p class="sbody" data-en="This gathering is made possible by the generosity of organizations who believe in community-led healing." data-es="Este encuentro es posible gracias a la generosidad de organizaciones que creen en la sanación liderada por la comunidad.">This gathering is made possible by the generosity of organizations who believe in community-led healing.</p>
+    <div class="sp-grid">
+      <div style="text-align:center;"><p class="sp-mag">MAG</p><p class="sp-mag-sub">Material Handling</p></div>
+      <div style="text-align:center;"><span style="font-size:28px;">🦋</span><p class="sp-ang">xangari</p></div>
+      <div style="text-align:center;">
+        <p style="font-family:'Lora',serif;font-size:16px;font-style:italic;color:var(--ink-mid);" data-en="Interested in sponsoring a future gathering?" data-es="¿Interesado en patrocinar un futuro encuentro?">Interested in sponsoring a future gathering?</p>
+        <a href="#contact" class="btn-s" style="display:inline-block;margin-top:.75rem;font-size:13px;padding:9px 22px;" data-en="Get in touch" data-es="Contáctanos">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ldiv"><div class="lline"></div><span class="lico">🌿</span><div class="lline"></div></div>
+
+<!-- TEMPLATE -->
+<section id="template" class="tmpl-bg">
+  <div class="si">
+    <p class="slbl" data-en="For Communities &amp; Organizations" data-es="Para Comunidades y Organizaciones">For Communities &amp; Organizations</p>
+    <h2 class="stitle" data-en="This model belongs to all of us" data-es="Este modelo nos pertenece a todos">This model belongs to all of us</h2>
+    <p class="sbody" data-en="La Cultura Cura was built to be replicated. We offer consultation support to help community organizations bring this culturally rooted wellness model to their own people." data-es="La Cultura Cura fue construida para ser replicada. Ofrecemos apoyo de consulta para ayudar a organizaciones comunitarias a llevar este modelo a su propia gente.">La Cultura Cura was built to be replicated. We offer consultation support to help community organizations bring this culturally rooted wellness model to their own people.</p>
+    <div class="tmpl-cards">
+      <div class="tc"><p class="tc-n">01</p><p class="tc-t" data-en="Operational Blueprint" data-es="Plan Operacional">Operational Blueprint</p><p class="tc-d" data-en="A tested run-of-show framework adaptable to your community context and scale." data-es="Un marco probado, adaptable al contexto y escala de tu comunidad.">A tested run-of-show framework adaptable to your community context and scale.</p></div>
+      <div class="tc"><p class="tc-n">02</p><p class="tc-t" data-en="Facilitator Curriculum" data-es="Currículo de Facilitadores">Facilitator Curriculum</p><p class="tc-d" data-en="Workshop structure grounded in trauma-informed practice and the Five Protective Factors." data-es="Estructura de talleres basada en práctica informada por trauma y los Cinco Factores Protectores.">Workshop structure grounded in trauma-informed practice and the Five Protective Factors.</p></div>
+      <div class="tc"><p class="tc-n">03</p><p class="tc-t" data-en="Implementation Support" data-es="Apoyo de Implementación">Implementation Support</p><p class="tc-d" data-en="Direct consultation to help your team plan, staff, and evaluate with cultural integrity." data-es="Consulta directa para ayudar a tu equipo a planificar, dotar de personal y evaluar con integridad cultural.">Direct consultation to help your team plan, staff, and evaluate with cultural integrity.</p></div>
+    </div>
+    <a href="#contact" class="btn-a" data-en="Request a Consultation →" data-es="Solicita una Consulta →">Request a Consultation →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-bg">
+  <div class="si">
+    <div style="margin-bottom:3rem;">
+      <p class="slbl" data-en="Register &amp; Connect" data-es="Regístrate y Conéctate">Register &amp; Connect</p>
+      <h2 class="stitle" data-en="There's a place here for you" data-es="Aquí hay un lugar para ti">There's a place here for you</h2>
+      <p class="sbody" data-en="Whether you're coming to heal, to serve, or to learn — you belong here. Choose the path that feels right for where you are." data-es="Ya sea que vengas a sanar, a servir o a aprender — perteneces aquí. Elige el camino que se sienta correcto para donde estás.">Whether you're coming to heal, to serve, or to learn — you belong here. Choose the path that feels right for where you are.</p>
+    </div>
+
+    <div class="tab-bar" role="tablist">
+      <button class="tab-btn active" onclick="switchTab('attend')" role="tab" aria-selected="true">🌿 <span data-en="Attend" data-es="Asistir">Attend</span></button>
+      <button class="tab-btn" onclick="switchTab('volunteer')" role="tab" aria-selected="false">🤝 <span data-en="Volunteer &amp; Support" data-es="Voluntariado y Apoyo">Volunteer &amp; Support</span></button>
+      <button class="tab-btn" onclick="switchTab('consult')" role="tab" aria-selected="false">🏛️ <span data-en="Consultation" data-es="Consulta">Consultation</span></button>
+    </div>
+
+    <!-- ATTEND -->
+    <div class="tab-panel active" id="tab-attend">
+      <div class="cgrid">
+        <div class="fcard">
+          <div class="ti" style="margin-bottom:1.5rem;"><span class="ti-ico" style="font-size:18px;">🌱</span><p class="ti-txt" style="font-size:14px;" data-en="You don't have to share anything you're not ready for. This form helps us prepare a space that truly holds you." data-es="No tienes que compartir nada para lo que no estés listo/a. Este formulario nos ayuda a preparar un espacio que realmente te sostenga.">You don't have to share anything you're not ready for. This form helps us prepare a space that truly holds you.</p></div>
+          <form onsubmit="handleSubmit(event,'attend')">
+            <div class="frow">
+              <div class="ff"><label class="flbl" for="a-fn" data-en="First Name" data-es="Nombre">First Name</label><input class="finp" id="a-fn" type="text" autocomplete="given-name"></div>
+              <div class="ff"><label class="flbl" for="a-ln" data-en="Last Name (optional)" data-es="Apellido (opcional)">Last Name (optional)</label><input class="finp" id="a-ln" type="text" autocomplete="family-name"></div>
+            </div>
+            <div class="ff"><label class="flbl" for="a-co" data-en="Email or Phone" data-es="Correo o Teléfono">Email or Phone</label><input class="finp" id="a-co" type="text" autocomplete="email"></div>
+            <div class="ff"><label class="flbl" for="a-zp" data-en="Zip Code" data-es="Código Postal">Zip Code</label><input class="finp" id="a-zp" type="text" inputmode="numeric" maxlength="10"></div>
+            <div class="ff"><label class="flbl" for="a-lg" data-en="Preferred Language" data-es="Idioma de Preferencia">Preferred Language</label><select class="fsel" id="a-lg"><option>English</option><option>Spanish / Español</option><option>Both / Ambos</option></select></div>
+            <div class="ff">
+              <p class="flbl" data-en="Who will you be attending with?" data-es="¿Con quién asistirás?">Who will you be attending with?</p>
+              <div class="cgrp">
+                <label class="ci"><input type="checkbox" name="ag" value="solo"><span class="cilbl" data-en="Coming alone / Solo" data-es="Solo/a">Coming alone / Solo</span></label>
+                <label class="ci"><input type="checkbox" name="ag" value="children"><span class="cilbl" data-en="With children / Con niños" data-es="Con niños">With children / Con niños</span></label>
+                <label class="ci"><input type="checkbox" name="ag" value="family"><span class="cilbl" data-en="With family / Con familia" data-es="Con familia">With family / Con familia</span></label>
+                <label class="ci"><input type="checkbox" name="ag" value="group"><span class="cilbl" data-en="With a group / Con un grupo" data-es="Con un grupo">With a group / Con un grupo</span></label>
+              </div>
+            </div>
+            <div class="ff"><label class="flbl" for="a-ac" data-en="Accessibility or support needs? (optional)" data-es="¿Necesidades de accesibilidad o apoyo? (opcional)">Accessibility or support needs? (optional)</label><textarea class="ftxt" id="a-ac"></textarea></div>
+            <div class="ff">
+              <p class="flbl" data-en="Would you like our quarterly newsletter?" data-es="¿Boletín trimestral?">Would you like our quarterly newsletter?</p>
+              <div class="cgrp">
+                <label class="ci"><input type="radio" name="a-nl" value="yes"><span class="cilbl" data-en="Yes, I'd love that" data-es="Sí, me encantaría">Yes, I'd love that</span></label>
+                <label class="ci"><input type="radio" name="a-nl" value="no"><span class="cilbl" data-en="Not right now" data-es="Por ahora no">Not right now</span></label>
+              </div>
+            </div>
+            <button type="submit" class="sbtn" data-en="Submit Registration →" data-es="Enviar Registro →">Submit Registration →</button>
+          </form>
+          <p class="snote" data-en="Your information is kept private and will never be shared without your permission. You can ask to have it removed at any time." data-es="Tu información es privada y nunca será compartida sin tu permiso. Puedes pedir que se elimine en cualquier momento.">Your information is kept private and will never be shared without your permission.</p>
+        </div>
+        <div class="istack">
+          <div class="icard"><p class="icard-t">🌿 <span data-en="What to Expect" data-es="Qué Esperar">What to Expect</span></p><p class="icard-b" data-en="Choose two workshops across two sessions. There are quiet spaces, options for movement, and rest woven throughout the day. Children are welcome and have activities designed just for them." data-es="Elige dos talleres en dos sesiones. Hay espacios tranquilos, opciones de movimiento y descanso durante todo el día. Los niños son bienvenidos y tienen actividades diseñadas especialmente para ellos.">Choose two workshops across two sessions. There are quiet spaces, options for movement, and rest woven throughout the day. Children are welcome and have activities designed just for them.</p></div>
+          <div class="icard">
+            <p class="icard-t">📋 <span data-en="Surveys &amp; Evaluation" data-es="Encuestas y Evaluación">Surveys &amp; Evaluation</span></p>
+            <p class="icard-b" data-en="We collect optional pre- and post-event surveys. Your responses help us tell the story of this community's healing and support future gatherings." data-es="Recopilamos encuestas opcionales de antes y después del evento. Tus respuestas nos ayudan a contar la historia de la sanación de esta comunidad.">We collect optional pre- and post-event surveys. Your responses help us tell the story of this community's healing and support future gatherings.</p>
+            <div class="survey-ph">
+              <div class="survey-ico">📊</div>
+              <!-- REPLACE with your Google Form link when ready -->
+              <p class="survey-txt" data-en="Pre-event survey coming soon.<br><strong>Participation is always optional.</strong>" data-es="Encuesta previa próximamente.<br><strong>La participación siempre es opcional.</strong>">Pre-event survey coming soon.<br><strong>Participation is always optional.</strong></p>
+            </div>
+          </div>
+          <div class="icard"><p class="icard-t">💬 <span data-en="Questions?" data-es="¿Preguntas?">Questions?</span></p><p class="icard-b"><em data-en="You don't have to figure this out alone. Reach out and we'll make sure you feel prepared and held before you arrive." data-es="No tienes que resolver esto solo/a. Comunícate y nos aseguraremos de que te sientas preparado/a antes de llegar.">You don't have to figure this out alone. Reach out and we'll make sure you feel prepared and held before you arrive.</em></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOLUNTEER -->
+    <div class="tab-panel" id="tab-volunteer">
+      <div class="cgrid">
+        <div class="fcard">
+          <div class="ti" style="margin-bottom:1.5rem;"><span class="ti-ico" style="font-size:18px;">🤝</span><p class="ti-txt" style="font-size:14px;" data-en="Every role matters — from setting up a table to holding space in the closing circle. Tell us how you'd like to show up." data-es="Cada rol importa — desde preparar una mesa hasta sostener el espacio en el círculo de cierre. Cuéntanos cómo te gustaría participar.">Every role matters — from setting up a table to holding space in the closing circle. Tell us how you'd like to show up.</p></div>
+          <form onsubmit="handleSubmit(event,'volunteer')">
+            <div class="frow">
+              <div class="ff"><label class="flbl" for="v-fn" data-en="First Name" data-es="Nombre">First Name</label><input class="finp" id="v-fn" type="text" autocomplete="given-name"></div>
+              <div class="ff"><label class="flbl" for="v-ln" data-en="Last Name" data-es="Apellido">Last Name</label><input class="finp" id="v-ln" type="text" autocomplete="family-name"></div>
+            </div>
+            <div class="ff"><label class="flbl" for="v-em" data-en="Email" data-es="Correo Electrónico">Email</label><input class="finp" id="v-em" type="email" autocomplete="email"></div>
+            <div class="ff"><label class="flbl" for="v-ph" data-en="Phone (optional)" data-es="Teléfono (opcional)">Phone (optional)</label><input class="finp" id="v-ph" type="tel" autocomplete="tel"></div>
+            <div class="ff">
+              <p class="flbl" data-en="How would you like to contribute?" data-es="¿Cómo te gustaría contribuir?">How would you like to contribute?</p>
+              <div class="cgrp">
+                <label class="ci"><input type="checkbox" name="vr" value="vol"><span class="cilbl" data-en="Volunteer on event day" data-es="Voluntario el día del evento">Volunteer on event day<em data-en="Setup, registration, guiding, kitchen, cleanup" data-es="Preparación, registro, guía, cocina, limpieza">Setup, registration, guiding, kitchen, cleanup</em></span></label>
+                <label class="ci"><input type="checkbox" name="vr" value="vendor"><span class="cilbl" data-en="Contribute as a vendor or pop-up" data-es="Contribuir como vendedor">Contribute as a vendor or pop-up<em data-en="Culturally aligned small businesses welcome" data-es="Pequeños negocios culturalmente alineados bienvenidos">Culturally aligned small businesses welcome</em></span></label>
+                <label class="ci"><input type="checkbox" name="vr" value="financial"><span class="cilbl" data-en="Financial or in-kind contribution" data-es="Contribución financiera o en especie">Financial or in-kind contribution<em data-en="Food, supplies, printing, sponsorship" data-es="Alimentos, suministros, impresión, patrocinio">Food, supplies, printing, sponsorship</em></span></label>
+                <label class="ci"><input type="checkbox" name="vr" value="outreach"><span class="cilbl" data-en="Outreach &amp; social media" data-es="Alcance y redes sociales">Outreach &amp; social media</span></label>
+                <label class="ci"><input type="checkbox" name="vr" value="facilitation"><span class="cilbl" data-en="Facilitation or workshop support" data-es="Facilitación o apoyo en talleres">Facilitation or workshop support</span></label>
+                <label class="ci"><input type="checkbox" name="vr" value="photo"><span class="cilbl" data-en="Photography or documentation" data-es="Fotografía o documentación">Photography or documentation</span></label>
+              </div>
+            </div>
+            <div class="ff"><label class="flbl" for="v-mo" data-en="Tell us more (optional)" data-es="Cuéntanos más (opcional)">Tell us more (optional)</label><textarea class="ftxt" id="v-mo"></textarea></div>
+            <div class="ff">
+              <p class="flbl" data-en="Would you like our quarterly newsletter?" data-es="¿Boletín trimestral?">Would you like our quarterly newsletter?</p>
+              <div class="cgrp">
+                <label class="ci"><input type="radio" name="v-nl" value="yes"><span class="cilbl" data-en="Yes, keep me connected" data-es="Sí, mantenme conectado/a">Yes, keep me connected</span></label>
+                <label class="ci"><input type="radio" name="v-nl" value="no"><span class="cilbl" data-en="Not right now" data-es="Por ahora no">Not right now</span></label>
+              </div>
+            </div>
+            <button type="submit" class="sbtn am" data-en="I Want to Contribute →" data-es="Quiero Contribuir →">I Want to Contribute →</button>
+          </form>
+          <p class="snote" data-en="Your information is kept private and will never be shared without your permission." data-es="Tu información es privada y nunca será compartida sin tu permiso.">Your information is kept private and will never be shared without your permission.</p>
+        </div>
+        <div class="istack">
+          <div class="icard"><p class="icard-t">📋 <span data-en="Volunteer Roles" data-es="Roles de Voluntariado">Volunteer Roles</span></p><p class="icard-b" data-en="We need 20–30 volunteers: registration, campus guides, kitchen staff, tlamanalli guardians, garden leads, floaters, and photographers. Setup begins at 8:00 AM." data-es="Necesitamos 20–30 voluntarios: registro, guías del campus, personal de cocina, guardianes del tlamanalli y fotógrafos. La preparación comienza a las 8:00 AM.">We need 20–30 volunteers: registration, campus guides, kitchen staff, tlamanalli guardians, garden leads, floaters, and photographers. Setup begins at 8:00 AM.</p></div>
+          <div class="icard"><p class="icard-t">🌱 <span data-en="Vendors &amp; Pop-Ups" data-es="Vendedores y Pop-Ups">Vendors &amp; Pop-Ups</span></p><p class="icard-b" data-en="We welcome 5–8 culturally aligned small businesses — plants, handmade goods, wellness offerings, community art. Vendor sign-up form coming soon." data-es="Damos la bienvenida a 5–8 pequeños negocios culturalmente alineados — plantas, artesanías, ofertas de bienestar y arte comunitario.">We welcome 5–8 culturally aligned small businesses — plants, handmade goods, wellness offerings, community art. Vendor sign-up form coming soon.</p></div>
+          <div class="icard"><p class="icard-t">💛 <span data-en="Every Contribution Matters" data-es="Cada Contribución Importa">Every Contribution Matters</span></p><p class="icard-b"><em data-en="This gathering runs on community generosity. Whether you give your time, your hands, your resources, or your presence — you are part of what makes this medicine real." data-es="Este encuentro funciona gracias a la generosidad de la comunidad. Ya sea que des tu tiempo, tus manos, tus recursos o tu presencia — eres parte de lo que hace real esta medicina.">This gathering runs on community generosity. Whether you give your time, your hands, your resources, or your presence — you are part of what makes this medicine real.</em></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSULTATION -->
+    <div class="tab-panel" id="tab-consult">
+      <div class="cgrid">
+        <div class="fcard">
+          <form onsubmit="handleSubmit(event,'consult')">
+            <div class="ff"><label class="flbl" for="c-nm" data-en="Your Name" data-es="Tu Nombre">Your Name</label><input class="finp" id="c-nm" type="text" autocomplete="name"></div>
+            <div class="ff"><label class="flbl" for="c-og" data-en="Organization" data-es="Organización">Organization</label><input class="finp" id="c-og" type="text" autocomplete="organization"></div>
+            <div class="ff"><label class="flbl" for="c-em" data-en="Email" data-es="Correo Electrónico">Email</label><input class="finp" id="c-em" type="email" autocomplete="email"></div>
+            <div class="ff"><label class="flbl" for="c-lc" data-en="Community Location" data-es="Ubicación de la Comunidad">Community Location</label><input class="finp" id="c-lc" type="text" placeholder="City, State / Ciudad, Estado"></div>
+            <div class="ff">
+              <label class="flbl" for="c-in" data-en="Area of Interest" data-es="Área de Interés">Area of Interest</label>
+              <select class="fsel" id="c-in">
+                <option data-en="Select one…" data-es="Selecciona una…">Select one…</option>
+                <option data-en="Planning our first gathering" data-es="Planificar nuestro primer encuentro">Planning our first gathering</option>
+                <option data-en="Adapting the workshop model" data-es="Adaptar el modelo de talleres">Adapting the workshop model</option>
+                <option data-en="Grant writing &amp; data collection" data-es="Subvenciones y recolección de datos">Grant writing &amp; data collection</option>
+                <option data-en="Facilitator training" data-es="Entrenamiento de facilitadores">Facilitator training</option>
+                <option data-en="General partnership" data-es="Asociación general">General partnership</option>
+              </select>
+            </div>
+            <div class="ff"><label class="flbl" for="c-vi" data-en="Tell us about your community and vision" data-es="Cuéntanos sobre tu comunidad y visión">Tell us about your community and vision</label><textarea class="ftxt" id="c-vi" style="min-height:120px;"></textarea></div>
+            <div class="ff">
+              <p class="flbl" data-en="Would you like our quarterly newsletter?" data-es="¿Boletín trimestral?">Would you like our quarterly newsletter?</p>
+              <div class="cgrp">
+                <label class="ci"><input type="radio" name="c-nl" value="yes"><span class="cilbl" data-en="Yes — keep us in the loop" data-es="Sí — manténganos informados">Yes — keep us in the loop</span></label>
+                <label class="ci"><input type="radio" name="c-nl" value="no"><span class="cilbl" data-en="Not right now" data-es="Por ahora no">Not right now</span></label>
+              </div>
+            </div>
+            <button type="submit" class="sbtn gr" data-en="Send Inquiry →" data-es="Enviar Consulta →">Send Inquiry →</button>
+          </form>
+          <p class="snote" data-en="We respond to all consultation requests within 5–7 business days." data-es="Respondemos a todas las solicitudes en 5–7 días hábiles.">We respond to all consultation requests within 5–7 business days.</p>
+        </div>
+        <div class="istack">
+          <div class="icard"><p class="icard-t">🌱 <span data-en="What We Offer" data-es="Lo Que Ofrecemos">What We Offer</span></p><p class="icard-b" data-en="Consultation to support your team in planning, staffing, facilitating, evaluating, and sustaining a gathering — adapted to your community's specific culture, context, and needs." data-es="Consulta para apoyar a tu equipo en planificar, dotar de personal, facilitar, evaluar y sostener un encuentro — adaptado a la cultura, contexto y necesidades específicas de tu comunidad.">Consultation to support your team in planning, staffing, facilitating, evaluating, and sustaining a gathering — adapted to your community's specific culture, context, and needs.</p></div>
+          <div class="icard"><p class="icard-t">📊 <span data-en="Evaluation &amp; Grant Support" data-es="Evaluación y Subvenciones">Evaluation &amp; Grant Support</span></p><p class="icard-b" data-en="We can help you design pre/post surveys, collect community impact data, and use that data to support grant applications and program sustainability." data-es="Podemos ayudarte a diseñar encuestas previas/posteriores, recopilar datos de impacto comunitario y usar esos datos para apoyar solicitudes de subvenciones y la sostenibilidad del programa.">We can help you design pre/post surveys, collect community impact data, and use that data to support grant applications and sustainability.</p></div>
+          <div class="icard"><p class="icard-t">🤝 <span data-en="Rooted in Relationship" data-es="Arraigado en la Relación">Rooted in Relationship</span></p><p class="icard-b"><em data-en="We believe in walking alongside communities, not handing down a model. Every consultation starts with deep listening — to your people, your history, and your vision." data-es="Creemos en caminar junto a las comunidades, no en entregar un modelo. Cada consulta comienza con una escucha profunda — a tu gente, tu historia y tu visión.">We believe in walking alongside communities, not handing down a model. Every consultation starts with deep listening — to your people, your history, and your vision.</em></p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="flogo">La Cultura Cura Festival: Somos Medicina</p>
+  <p class="fbody" data-en="&ldquo;Our culture has always been our medicine.&rdquo;" data-es="&ldquo;Nuestra cultura siempre ha sido nuestra medicina.&rdquo;">"Our culture has always been our medicine."</p>
+  <div class="fdiv"></div>
+  <nav class="flinks">
+    <a href="#about" data-en="About" data-es="Sobre el Evento">About</a>
+    <a href="#program" data-en="Program" data-es="Programa">Program</a>
+    <a href="#photos" data-en="Past Years" data-es="Años Anteriores">Past Years</a>
+    <a href="#template" data-en="For Communities" data-es="Para Comunidades">For Communities</a>
+    <a href="#contact" data-en="Register" data-es="Regístrate">Register</a>
+  </nav>
+  <p class="fnote">Lugo Elementary School · 4345 Pendleton Avenue, Lynwood, CA · May 30, 2026 · 9:30 AM – 3:00 PM · FREE / GRATIS</p>
+  <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;align-items:center;">
+    <a href="https://www.instagram.com/la_cultura_cura_festival" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:rgba(253,250,244,.6);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+      @la_cultura_cura_festival
+    </a>
+    <span style="color:rgba(253,250,244,.2);font-size:12px;">·</span>
+    <a href="/cdn-cgi/l/email-protection#751914160019010007141600071413100601351218141c195b161a18" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:rgba(253,250,244,.6);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="__cf_email__" data-cfemail="adc1ccced8c1d9d8dfccced8dfcccbc8ded9edcac0ccc4c183cec2c0">[email&#160;protected]</span>
+    </a>
+  </div>
+  <p class="tlazocamati">TLAZOCAMATI 🌿</p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function setLang(l){
+  document.body.className=l;
+  document.querySelectorAll('.lang-btn').forEach((b,i)=>{
+    const a=(i===0&&l==='en')||(i===1&&l==='es');
+    b.classList.toggle('active',a);b.setAttribute('aria-pressed',a);
+  });
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const v=el.getAttribute('data-'+l);
+    if(!v)return;
+    const t=el.tagName;
+    if(t==='INPUT'||t==='TEXTAREA'||t==='OPTION')return;
+    el.innerHTML=v;
+  });
+}
+function switchTab(t){
+  ['attend','volunteer','consult'].forEach((id,i)=>{
+    const a=id===t;
+    document.querySelectorAll('.tab-btn')[i].classList.toggle('active',a);
+    document.querySelectorAll('.tab-btn')[i].setAttribute('aria-selected',a);
+    document.getElementById('tab-'+id).classList.toggle('active',a);
+  });
+}
+function toggleMenu(btn){
+  const n=document.getElementById('nav-links');
+  const o
